@@ -4,6 +4,22 @@ Formato: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). Cada
 versão traz uma seção **O que muda pra você**, mostrada pelo
 `/atualizar-sistema`.
 
+## [1.1.0] — 2026-10-15
+
+### O que muda pra você
+
+- Chegou colaborador novo? `/boas-vindas` gera a arte oficial "Reforço no
+  time!" (foto em círculo, nome, setor) em PNG pra WhatsApp/mural e PDF,
+  mais a mensagem pro grupo.
+
+### Adicionado
+
+- Skill `boas-vindas` (24 skills no total) e template
+  `identidade/templates/reforco-no-time.html` (A4; 1 a 4 pessoas; placeholder
+  de silhueta quando não há foto)
+- `/integracao` passa a usar a arte oficial no kit; elementos "folhas" e
+  "onda" documentados no design-guide
+
 ## [1.0.0] — 2026-10-15
 
 Primeira versão do HayashiOS.

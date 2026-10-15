@@ -21,14 +21,15 @@ nas duas unidades.
   (Cristalina-GO e Chapada Diamantina-BA), números de dez/2024, governança
   (`_memoria/empresa.md`)
 - **Identidade visual:** cores oficiais (verde-petróleo #007581), Roboto
-  Condensed + Lato, logo, elementos (cards, régua, aspas, chevrons),
-  implementados em `identidade/hayashi.css` e em 10 templates HTML
+  Condensed + Lato, logo, elementos (cards, régua, aspas, chevrons, onda,
+  folhas), implementados em `identidade/hayashi.css` e em 11 templates HTML
 - **Tom de voz** da empresa (`_memoria/preferencias.md`)
 
-## As skills (23)
+## As skills (24)
 
 **Cultura e pessoas** — `/cultura` (o que o guia e o manual dizem) ·
-`/decisao` (situação → arquétipo → orientação) · `/feedback` · `/integracao`
+`/decisao` (situação → arquétipo → orientação) · `/feedback` · `/boas-vindas`
+(arte "Reforço no time!") · `/integracao`
 · `/reconhecimento` (inclui aniversariantes) · `/comunicado`
 
 **Materiais** — `/arte` · `/placa` (NR-26 + identidade) · `/apresentacao` ·
@@ -75,7 +76,7 @@ Dentro do Claude: `/instalar`. Pra vídeo, instale o ffmpeg
 ```
 _memoria/        empresa, cultura (guia), politicas (manual), preferencias, estrategia, usuario (pessoal, não versionado)
 identidade/      design-guide, hayashi.css, logo, templates/, fotos/
-.claude/skills/  as 23 skills
+.claude/skills/  as 24 skills
 scripts/         render, pdf, video, transcrever, qrcode, verificar-ambiente...
 templates/       cultura/casos.md, calendario/datas-hayashi.md, catálogos, sistema/
 comunicacao/     comunicados, calendário, posts

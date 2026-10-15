@@ -132,6 +132,7 @@ varredura.
 |---|---|
 | Orientação de situação (`/decisao`) | `pessoas/decisoes/<YYYY-MM-DD>-<slug>.md` (não versionada; sem nomes) |
 | Feedback | `pessoas/feedback/<YYYY-MM-DD>-<slug>/` (não versionada) |
+| Arte "Reforço no time!" (colaborador novo) | `materiais/boas-vindas/<YYYY-MM-DD>-<slug>/` |
 | Kit de integração | `materiais/integracao/<YYYY-MM-DD>-<slug>/` |
 | Reconhecimento, aniversariantes, certificados | `materiais/reconhecimento/<YYYY-MM-DD>-<slug>/` |
 | Artes (cartaz, banner, cartão, tela, crachá) | `materiais/artes/<YYYY-MM-DD>-<slug>/` |

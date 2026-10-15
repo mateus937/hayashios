@@ -26,6 +26,8 @@ celebrar e compartilhar perante o time".
 
 ## Modos
 
+(Boas-vindas a colaborador novo é `/boas-vindas`, arte "Reforço no time!".)
+
 ### resultado / comportamento
 
 1. Perguntar (se faltar): quem (pessoa ou equipe; primeiro nome e área), o

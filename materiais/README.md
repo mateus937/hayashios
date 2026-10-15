@@ -7,7 +7,8 @@ materiais/
 ├── apresentacoes/<YYYY-MM-DD>-<slug>/     /apresentacao (apresentacao.html, slides/, .pdf, roteiro.md)
 ├── documentos/<YYYY-MM-DD>-<slug>/        /documento (documento.md, .html, .pdf)
 ├── videos/<YYYY-MM-DD>-<slug>/            /video (roteiro.md, legendas/, pecas/; brutos/ e .mp4 não versionados)
-├── integracao/<YYYY-MM-DD>-<slug>/        /integracao (roteiro, slides, checklist, quiz, confirmação, cartão)
+├── boas-vindas/<YYYY-MM-DD>-<slug>/       /boas-vindas (reforco.html, reforco-01.png, reforco.pdf, mensagem.md, fotos/)
+├── integracao/<YYYY-MM-DD>-<slug>/        /integracao (roteiro, slides, checklist, quiz, confirmação, arte de boas-vindas)
 ├── reconhecimento/<YYYY-MM-DD>-<slug>/    /reconhecimento (texto, cartão, post, certificado)
 └── cultura/                               /cultura (quiz, resumos)
 ```

@@ -22,8 +22,8 @@ Recebimento.
 
 - `_memoria/cultura.md`, `_memoria/politicas.md`, `_memoria/empresa.md`
   (história, unidades, números), `_memoria/preferencias.md`
-- `/apresentacao` (slides), `/arte` (cartão), `/documento` (confirmação,
-  checklist em PDF), `/cultura quiz`
+- `/apresentacao` (slides), `/boas-vindas` (arte "Reforço no time!"),
+  `/documento` (confirmação, checklist em PDF), `/cultura quiz`
 - `identidade/templates/`, `identidade/hayashi.css`
 - Saída: `materiais/integracao/<YYYY-MM-DD>-<slug>/`
 
@@ -67,8 +67,8 @@ Estrutura padrão de 60 min (ajustar):
 - `confirmacao-recebimento.pdf` → `/documento` com o texto oficial da
   Confirmação (em `cultura.md`), campos nome legível, assinatura, data,
   versão 1.7
-- `cartao-boas-vindas/` → `/arte` tipo cartão, com primeiro nome (ou "Bem-
-  vindo(a) ao time Hayashi" sem nome pra turma)
+- `reforco-no-time/` → `/boas-vindas` em modo orquestrado (arte oficial
+  "Reforço no time!" com nome, setor e foto de cada pessoa)
 - `mensagem-lider.md`: texto pro líder imediato mandar no primeiro dia
   (apresentação, horário, onde se apresentar, quem procurar)
 
@@ -81,7 +81,7 @@ os arquivos pesados (slides, PDFs).
 ✓ Integração <turma/nome> — <unidade> — <data>
 materiais/integracao/<pasta>/
   roteiro.md · slides/ (PNG + PDF) · checklist-primeira-semana.pdf
-  quiz.md · confirmacao-recebimento.pdf · cartao-boas-vindas/ · mensagem-lider.md
+  quiz.md · confirmacao-recebimento.pdf · reforco-no-time/ · mensagem-lider.md
 Lembrete: o guia impresso é entregue na integração e a confirmação assinada vai pro RH.
 ```
 

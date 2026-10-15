@@ -44,7 +44,8 @@ checkpoint só do PNG final.
 | banner / faixa | `slide-16x9.html` adaptado | sob medida (ex.: 3000x1000) | PDF vetorial |
 | tela (TV, painel, mural digital) | `slide-16x9.html` | 1920x1080 | PNG |
 | post WhatsApp / mural digital | `post-feed.html` ou `quadrado` | 1080x1350 / 1080x1080 | PNG |
-| cartão (aniversário, boas-vindas, agradecimento) | `cartao.html` | 1400x840 (frente e verso) | PNG |
+| cartão (aniversário, agradecimento) | `cartao.html` | 1400x840 (frente e verso) | PNG |
+| boas-vindas a colaborador novo | `reforco-no-time.html` → usar `/boas-vindas` | A4 | PNG + PDF |
 | certificado | `certificado-a4-paisagem.html` | A4 paisagem | PDF |
 | crachá | `cracha` (54x86 mm, a partir de `documento-a4.html`) | CR-80 | PDF |
 | convite | `cartao.html` ou `post-feed.html` | digital | PNG |

@@ -25,7 +25,8 @@ placas, cartazes, cartões, apresentações, documentos e vídeos.
 | Saber o que fazer numa situação (conflito, brinde, erro, visita, atraso…) | `/decisao` e descreva |
 | Saber o que o guia ou o manual diz sobre algo | `/cultura <tema>` |
 | Preparar um feedback ou a avaliação de experiência | `/feedback` |
-| Montar a integração de um colaborador novo ou de uma turma | `/integracao` |
+| Arte "Reforço no time!" quando entra um colaborador | `/boas-vindas` |
+| Montar a integração cultural de um colaborador novo ou de uma turma | `/integracao` |
 | Reconhecer alguém, aniversariantes do mês, certificado | `/reconhecimento` |
 | Escrever aviso, comunicado, campanha, mensagem pro grupo | `/comunicado` |
 | Cartaz, cartão, tela pra TV, banner, crachá, convite | `/arte` |

@@ -1,0 +1,111 @@
+<!doctype html>
+<!--
+  Template Hayashi: "Reforço no time!" — boas-vindas a colaboradores novos (padrão oficial).
+  A4 retrato (794x1123 px = 210x297 mm). Serve pra WhatsApp/mural (PNG) e impressão (PDF).
+  Cabe de 1 a 4 pessoas; mais que isso, fazer duas artes.
+  Ao copiar pra materiais/boas-vindas/<pasta>/, troque ../hayashi.css e ../logo*.png por ../../../identidade/...
+  Fotos: pasta fotos/ ao lado do HTML; sem foto, deixe o placeholder (silhueta).
+  PNG (WhatsApp): node scripts/render.js <este.html> <pasta> --largura 794 --altura 1123 --prefixo reforco --escala 2
+  PDF:            node scripts/pdf.js <este.html> reforco.pdf --formato A4
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Reforço no time — Hayashi</title>
+<link rel="stylesheet" href="../hayashi.css">
+<style>
+  @page { size: A4; margin: 0; }
+  .hay-page.a4 { width: 794px; height: 1123px; display: flex; flex-direction: column; }
+
+  /* ---------- cabeçalho ---------- */
+  .topo {
+    position: relative; background: var(--hay-petroleo); color: #fff;
+    padding: 56px 64px 44px 72px; border-radius: 0 0 0 28px; overflow: hidden; min-height: 400px;
+  }
+  .topo .logo { position: absolute; right: 56px; top: 44px; height: 92px; }
+  .topo .hay-titulo { font-size: 64px; line-height: .96; margin: 10px 0 26px; max-width: 420px; }
+  .topo .chamada { font-family: var(--hay-fonte-texto); font-weight: 700; font-size: 20px; line-height: 1.35; margin: 0 0 16px; max-width: 560px; }
+  .topo .apoio { font-size: 14px; line-height: 1.45; margin: 0; max-width: 540px; opacity: .92; }
+  .folha { position: absolute; fill: #fff; }
+  .folha.contorno { fill: none; stroke: #fff; stroke-width: 3; }
+
+  /* ---------- corpo ---------- */
+  .corpo { position: relative; flex: 1; padding: 48px 72px 0; }
+  .marca-dagua { position: absolute; left: 50%; top: 52%; transform: translate(-50%, -50%); height: 440px; opacity: .07; pointer-events: none; }
+  .pessoas { position: relative; display: flex; flex-direction: column; gap: 52px; }
+  .pessoa { display: flex; align-items: center; gap: 36px; }
+  .pessoa .foto {
+    width: 150px; height: 150px; border-radius: 50%; object-fit: cover; object-position: center 25%;
+    flex: 0 0 150px; background: var(--hay-nevoa); box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  }
+  .pessoa .placeholder { display: flex; align-items: center; justify-content: center; }
+  .pessoa .placeholder svg { width: 84px; height: 84px; fill: var(--hay-agua); }
+  .pessoa .nome { font-family: 'Roboto', var(--hay-fonte-texto); font-weight: 700; font-size: 24px; color: var(--hay-texto); margin: 0 0 6px; }
+  .pessoa .setor { font-size: 18px; color: var(--hay-grafite); margin: 0; line-height: 1.3; }
+  .pessoas.um { justify-content: center; height: 100%; padding-bottom: 60px; }
+  .pessoas.um .pessoa { flex-direction: column; text-align: center; gap: 20px; }
+  .pessoas.um .pessoa .foto { width: 220px; height: 220px; flex-basis: 220px; }
+  .pessoas.um .pessoa .nome { font-size: 30px; }
+  .pessoas.quatro { gap: 32px; }
+  .pessoas.quatro .pessoa .foto { width: 120px; height: 120px; flex-basis: 120px; }
+
+  /* ---------- rodapé: onda ---------- */
+  .onda { position: absolute; left: 0; right: 0; bottom: 0; height: 170px; }
+  .onda svg { width: 100%; height: 100%; display: block; }
+  .onda .folha { right: 40px; bottom: 26px; width: 90px; height: 90px; transform: rotate(-20deg); }
+</style>
+</head>
+<body>
+
+<div class="hay-page a4">
+
+  <div class="topo">
+    <!-- folha grande saindo do canto superior esquerdo -->
+    <svg class="folha" style="left:-70px; top:-80px; width:230px; height:230px; transform:rotate(35deg)" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 92C8 42 42 8 92 8c0 50-34 84-84 84z"/><path d="M8 92L78 22" stroke="#007581" stroke-width="3"/></svg>
+    <!-- folha em contorno na borda direita -->
+    <svg class="folha contorno" style="right:-28px; top:190px; width:150px; height:150px; transform:rotate(-55deg)" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 92C8 42 42 8 92 8c0 50-34 84-84 84z"/><path d="M8 92L78 22"/></svg>
+
+    <img class="logo" src="../logo-branco.png" alt="Hayashi">
+    <h1 class="hay-titulo">Reforço<br>no time!</h1>
+    <p class="chamada">Estamos felizes em comunicar que receberemos novos colegas para fazer história no Time Hayashi.</p>
+    <p class="apoio">Juntos, podemos fazer a diferença na vida e na carreira deles. Contamos com todos vocês para o acolhimento, suporte e colaboração.</p>
+  </div>
+
+  <div class="corpo">
+    <img class="marca-dagua" src="../logo.png" alt="">
+
+    <!-- classes da lista: (nenhuma) 2-3 pessoas · "um" 1 pessoa · "quatro" 4 pessoas -->
+    <div class="pessoas">
+
+      <div class="pessoa">
+        <!-- com foto: <img class="foto" src="fotos/lucas.jpg" alt=""> -->
+        <div class="foto placeholder"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="36" r="20"/><path d="M14 92c0-22 16-38 36-38s36 16 36 38z"/></svg></div>
+        <div>
+          <p class="nome">Lucas</p>
+          <p class="setor">Setor: Vigilância de Campo</p>
+        </div>
+      </div>
+
+      <div class="pessoa">
+        <div class="foto placeholder"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="36" r="20"/><path d="M14 92c0-22 16-38 36-38s36 16 36 38z"/></svg></div>
+        <div>
+          <p class="nome">Gilfredo</p>
+          <p class="setor">Setor: Vigilância de Campo</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="onda">
+    <svg viewBox="0 0 794 170" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 78C150 20 300 150 470 70S720 40 794 95V170H0z" fill="#2A9AA5" opacity=".55"/>
+      <path d="M0 110C140 60 290 165 460 100S700 70 794 125V170H0z" fill="#007581"/>
+    </svg>
+    <svg class="folha contorno" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 92C8 42 42 8 92 8c0 50-34 84-84 84z"/><path d="M8 92L78 22"/></svg>
+  </div>
+
+</div>
+
+</body>
+</html>

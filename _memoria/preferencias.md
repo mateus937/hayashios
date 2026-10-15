@@ -25,6 +25,8 @@ frase.
 - "Conto com o empenho e dedicação de cada um de vocês para tornar nossa
   visão uma realidade." (Diretor Geral)
 - "Que você continue a inspirar e fazer a diferença." (cartão de aniversário)
+- "Reforço no time! Estamos felizes em comunicar que receberemos novos
+  colegas para fazer história no Time Hayashi." (arte de boas-vindas)
 
 ## Tratamento e vocabulário
 

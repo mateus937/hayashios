@@ -96,6 +96,8 @@ simplicidade; não parece agência nem rede social.
   "HAYASHI | Título" + logo pequeno à direita
 - **Ilustrações de linha fina** em água ou branco (balões, folhas, presente)
   nos cartões
+- **Folhas brancas** (cheias e em contorno) saindo das bordas e **onda
+  petróleo em dois tons** no rodapé, na arte "Reforço no time!" (boas-vindas)
 - **Ícones de linha** (traço 2 px) em petróleo; no manual, preto com verde de apoio
 - **Tabelas** com linhas alternadas em cinza claro
 - **Pílulas** para tags e botões
@@ -129,7 +131,7 @@ empresa, as pessoas ou o produto.
 
 post 1080x1350 · quadrado 1080x1080 · story 1080x1920 · slide 1920x1080 ·
 a4 · a4-paisagem · a3 · a3-paisagem · cartao 1400x840 · cracha 54x86 mm ·
-certificado A4 paisagem · vinheta e lower third 1920x1080
+certificado A4 paisagem · vinheta e lower third 1920x1080 · reforço no time (A4)
 
 ---
 

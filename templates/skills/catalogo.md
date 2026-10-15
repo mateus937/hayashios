@@ -6,7 +6,7 @@ O `/mapear-rotinas` consulta aqui e confere com `Glob .claude/skills/*/SKILL.md`
 > Skills ficam em `.claude/skills/<nome>/SKILL.md` e valem pra todos depois
 > do `/salvar`. O administrador revisa.
 
-## Vem no HayashiOS (23)
+## Vem no HayashiOS (24)
 
 ### Cultura e pessoas
 | Skill | O que faz |
@@ -14,7 +14,8 @@ O `/mapear-rotinas` consulta aqui e confere com `Glob .claude/skills/*/SKILL.md`
 | `/cultura` | o que o Guia (v1.7) e o Manual (v4) dizem; resumos; quiz |
 | `/decisao` | situação → arquétipo → orientação e quem envolver |
 | `/feedback` | roteiro de feedback e avaliação de experiência referenciados no guia |
-| `/integracao` | kit de integração cultural (roteiro, slides, checklist, quiz, confirmação, cartão) |
+| `/boas-vindas` | arte oficial "Reforço no time!" + mensagem, a cada colaborador novo |
+| `/integracao` | kit de integração cultural (roteiro, slides, checklist, quiz, confirmação, arte de boas-vindas) |
 | `/reconhecimento` | reconhecimento (arquétipo X), aniversariantes, tempo de casa, certificados |
 | `/comunicado` | comunicação interna por canal, com aprovação e assinatura |
 

@@ -134,6 +134,7 @@ varredura.
 |---|---|
 | Orientação de situação (`/decisao`) | `pessoas/decisoes/<YYYY-MM-DD>-<slug>.md` (não versionada; sem nomes) |
 | Feedback | `pessoas/feedback/<YYYY-MM-DD>-<slug>/` (não versionada) |
+| Arte "Reforço no time!" (colaborador novo) | `materiais/boas-vindas/<YYYY-MM-DD>-<slug>/` |
 | Kit de integração | `materiais/integracao/<YYYY-MM-DD>-<slug>/` |
 | Reconhecimento, aniversariantes, certificados | `materiais/reconhecimento/<YYYY-MM-DD>-<slug>/` |
 | Artes (cartaz, banner, cartão, tela, crachá) | `materiais/artes/<YYYY-MM-DD>-<slug>/` |
@@ -199,7 +200,7 @@ administrativo, TI. Cada pessoa preenche `_memoria/usuario.md` no
 ### Rotina sugerida
 
 - **Mensal:** `/calendario` (datas, campanhas, DDS), `/reconhecimento aniversariantes`
-- **Por turma nova:** `/integracao`
+- **Por colaborador novo:** `/boas-vindas` (arte "Reforço no time!") e, na integração cultural, `/integracao`
 - **Quando precisar:** `/decisao`, `/feedback`, `/comunicado`, `/arte`,
   `/placa`, `/apresentacao`, `/documento`, `/video`, `/cultura`
 - **Fim de sessão:** `/salvar`
