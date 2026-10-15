@@ -19,7 +19,8 @@ oficial, foto em círculo.
 ## Dependências
 
 - `identidade/templates/reforco-no-time.html`, `identidade/hayashi.css`,
-  `identidade/logo.png`, `identidade/logo-branco.png`
+  `identidade/logo.png`, `identidade/logo-branco.png`,
+  `identidade/elementos/` (folha de canto e ramo em branco)
 - `_memoria/empresa.md` (unidade, setores), `_memoria/preferencias.md`
 - `node scripts/render.js` e `node scripts/pdf.js`
 - Saída: `materiais/boas-vindas/<YYYY-MM-DD>-<slug>/`
@@ -59,8 +60,8 @@ Mais de 4 pessoas → dividir em duas artes (por setor ou por unidade).
    "turma-<unidade>"); subpasta `fotos/` com as fotos copiadas e renomeadas
    (`<nome>.jpg`).
 2. Copiar `identidade/templates/reforco-no-time.html` pra `reforco.html`;
-   trocar `../hayashi.css`, `../logo.png` e `../logo-branco.png` por
-   `../../../identidade/...`.
+   trocar `../hayashi.css`, `../logo.png`, `../logo-branco.png` e
+   `../elementos/` por `../../../identidade/...`.
 3. Preencher: chamada e apoio no singular ou plural; um bloco `.pessoa` por
    pessoa; com foto, `<img class="foto" src="fotos/<nome>.jpg">`; sem foto,
    manter o placeholder. Classe da lista: 1 pessoa → `pessoas um`; 2-3 →

@@ -94,10 +94,25 @@ simplicidade; não parece agência nem rede social.
 - **Barra superior** petróleo com logo branco nas peças digitais;
   **cabeçalho de documento** com número da página em caixa petróleo +
   "HAYASHI | Título" + logo pequeno à direita
-- **Ilustrações de linha fina** em água ou branco (balões, folhas, presente)
+- **Ilustrações de linha fina** em água ou branco (balões, presente, bolo)
   nos cartões
-- **Folhas brancas** (cheias e em contorno) saindo das bordas e **onda
-  petróleo em dois tons** no rodapé, na arte "Reforço no time!" (boas-vindas)
+- **Folhas de bambu oficiais** (`identidade/elementos/`) saindo das bordas e
+  **onda petróleo em dois tons** no rodapé, na arte "Reforço no time!"
+
+---
+
+## Elementos gráficos oficiais (`identidade/elementos/`)
+
+| Arquivo | O que é | Como usar |
+|---|---|---|
+| `folha-canto.png` / `folha-canto-branco.png` | trio de folhas com as bordas já cortadas | sempre encostado num **canto** da peça (as bordas retas ficam na borda do papel); não girar |
+| `folha-ramo.png` / `folha-ramo-branco.png` | ramo de bambu completo (3 folhas + haste) | pode girar e sangrar pela borda; 1 ou 2 por peça, no máximo |
+| `serpentina.png` / `serpentina-branco.png` | traço em espiral | só em peças de celebração (aniversário, conquista, confraternização) |
+
+Petróleo sobre fundo claro; branco sobre petróleo ou foto com overlay.
+Nunca esticar (manter proporção), nunca recolorir fora de petróleo/branco,
+nunca usar como ícone pequeno (menos de 60 px). Nervuras são vazadas: o
+fundo aparece nelas, como no original. Classe CSS: `.hay-folha`.
 - **Ícones de linha** (traço 2 px) em petróleo; no manual, preto com verde de apoio
 - **Tabelas** com linhas alternadas em cinza claro
 - **Pílulas** para tags e botões

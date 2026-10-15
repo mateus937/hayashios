@@ -220,6 +220,11 @@ body {
 .hay-lower-third .cargo { font-size: 24px; color: var(--hay-grafite); margin-top: 6px; }
 .hay-legenda-faixa { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 96px; background: rgba(0,117,129,.92); color: #fff; font-size: 34px; text-align: center; }
 
+/* ---------- Elementos gráficos (identidade/elementos/) ---------- */
+/* folha-canto: bordas cortadas, sempre encostada num canto da peça. folha-ramo: ramo completo, pode girar. serpentina: celebração. */
+.hay-folha { position: absolute; pointer-events: none; display: block; }
+.hay-folha.suave { opacity: .22; }
+
 /* ---------- Utilidades ---------- */
 .hay-centro { text-align: center; }
 .hay-coluna { display: flex; flex-direction: column; justify-content: center; height: 100%; padding: var(--hay-margem); }

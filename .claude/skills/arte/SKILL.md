@@ -26,6 +26,10 @@ Segurança ou na Comunicação.
   literais quando a peça for de cultura)
 - Render: `node scripts/render.js <html> <pasta> [--largura --altura] [--transparente]`
   e `node scripts/pdf.js <html> <pdf> [--formato A4|A3] [--paisagem]`
+- Elementos oficiais: `identidade/elementos/` (folha de canto, ramo de
+  bambu, serpentina; versões petróleo e branca) com a classe `.hay-folha`;
+  folha de canto sempre encostada num canto, ramo pode girar, serpentina só
+  em celebração
 - Ícones: inline SVG de linha (Lucide, MIT) em traço 2px, cor petróleo ou
   verde de apoio; sem clip-art, sem emoji como ícone
 - Saída: `materiais/artes/<YYYY-MM-DD>-<slug>/`
