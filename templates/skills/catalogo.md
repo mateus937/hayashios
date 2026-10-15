@@ -1,4 +1,4 @@
-# Catálogo de skills do Hayashi OS
+# Catálogo de skills do HayashiOS
 
 O que **vem no sistema**, o que é **instalável** e o que **não existe**.
 O `/mapear-rotinas` consulta aqui e confere com `Glob .claude/skills/*/SKILL.md`.
@@ -6,7 +6,7 @@ O `/mapear-rotinas` consulta aqui e confere com `Glob .claude/skills/*/SKILL.md`
 > Skills ficam em `.claude/skills/<nome>/SKILL.md` e valem pra todos depois
 > do `/salvar`. O administrador revisa.
 
-## Vem no Hayashi OS (23)
+## Vem no HayashiOS (23)
 
 ### Cultura e pessoas
 | Skill | O que faz |

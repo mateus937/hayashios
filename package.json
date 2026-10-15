@@ -2,7 +2,7 @@
   "name": "hayashi-os",
   "version": "1.0.0",
   "private": true,
-  "description": "Hayashi OS: o sistema operacional da Hayashi dentro do Claude Code (cultura, comunicação, materiais, vídeo)",
+  "description": "HayashiOS: o sistema operacional da Hayashi dentro do Claude Code (cultura, comunicação, materiais, vídeo)",
   "scripts": {
     "verificar": "node scripts/verificar-ambiente.js",
     "render": "node scripts/render.js",

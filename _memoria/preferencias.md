@@ -1,6 +1,6 @@
 # Preferências de comunicação da Hayashi
 
-> Como o Hayashi OS escreve em nome da empresa. Derivado dos textos oficiais
+> Como o HayashiOS escreve em nome da empresa. Derivado dos textos oficiais
 > (Guia da Cultura, Manual do Colaborador, cartão de aniversariantes).
 > Preferências pessoais de quem usa ficam em `_memoria/usuario.md`.
 

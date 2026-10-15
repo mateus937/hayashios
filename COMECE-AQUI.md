@@ -1,10 +1,10 @@
-# Comece aqui — Hayashi OS
+# Comece aqui — HayashiOS
 
 > Manual de uso pra quem tem acesso ao Claude Code na Hayashi.
 
 ## O que é
 
-O Hayashi OS é o Claude Code configurado com a memória da Hayashi: o Guia
+O HayashiOS é o Claude Code configurado com a memória da Hayashi: o Guia
 do Manifesto da Cultura (v1.7), o Manual do Colaborador (v4), a história, a
 identidade visual e um conjunto de skills (comandos) pra orientar decisões
 pela cultura e produzir materiais no padrão da empresa: comunicados,
@@ -12,7 +12,7 @@ placas, cartazes, cartões, apresentações, documentos e vídeos.
 
 ## Como abrir
 
-1. Abra a pasta do Hayashi OS no computador (Explorer → botão direito num
+1. Abra a pasta do HayashiOS no computador (Explorer → botão direito num
    espaço vazio → "Abrir no Terminal"; ou no VS Code, terminal integrado).
 2. Digite `claude`.
 3. No primeiro acesso, digite `/instalar` (2 minutos: nome, área, unidade).
@@ -77,7 +77,7 @@ que faço?", "faz uma placa de uso obrigatório de capacete pra oficina",
    pro administrador do OS.
 3. Fechou sem querer? `claude --continue` volta de onde parou.
 
-## Administrador do Hayashi OS
+## Administrador do HayashiOS
 
 *(nome e contato: preencher)* — `docs/guia-administrador.md` tem como
 manter o sistema, cadastrar pessoas e atualizar o guia quando sair versão

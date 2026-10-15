@@ -1,10 +1,10 @@
 ---
 name: atualizar-sistema
 description: >
-  Traz a versão mais nova do Hayashi OS do repositório da empresa (skills, scripts, templates,
+  Traz a versão mais nova do HayashiOS do repositório da empresa (skills, scripts, templates,
   memória oficial, identidade) sem mexer no que é só seu (`_memoria/usuario.md`, `pessoas/`,
   `dados/`). Mostra o que mudou (CHANGELOG). Use quando o usuário disser "/atualizar-sistema",
-  "tem versão nova?", "atualiza o Hayashi OS", ou quando o administrador avisar de versão nova.
+  "tem versão nova?", "atualiza o HayashiOS", ou quando o administrador avisar de versão nova.
 disable-model-invocation: true
 ---
 
@@ -31,7 +31,7 @@ pessoal não está versionado e fica intacto.
 9. Resumo:
 
 ```
-✓ Hayashi OS atualizado: vX → vY
+✓ HayashiOS atualizado: vX → vY
 O que muda pra você: ...
 Skills novas: ... · Alteradas: ...
 Guia/Manual: <versão carregada> (mudou? sim/não)

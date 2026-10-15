@@ -1,7 +1,7 @@
 ---
 name: instalar
 description: >
-  Prepara o Hayashi OS no computador de quem acabou de clonar: confere o ambiente (Node,
+  Prepara o HayashiOS no computador de quem acabou de clonar: confere o ambiente (Node,
   Playwright, ffmpeg, git), cria o `_memoria/usuario.md` com nome, área, unidade e papel da
   pessoa, confirma que a memória da empresa está carregada e mostra por onde começar. Modo
   administrador pra configurar o repositório pela primeira vez. Use quando o usuário acabou de
@@ -9,7 +9,7 @@ description: >
 argument-hint: "[administrador]"
 ---
 
-# /instalar — Primeiro acesso ao Hayashi OS
+# /instalar — Primeiro acesso ao HayashiOS
 
 A memória da empresa (guia, manual, identidade) já vem preenchida no
 repositório. O que falta é o contexto de quem está usando e a máquina
@@ -61,7 +61,7 @@ Conferir que o `CLAUDE.md` contém `hayashi:nucleo:inicio` e
 Mostrar, conforme a área (do `usuario.md`):
 
 ```
-Pronto, <nome>. O Hayashi OS já conhece a empresa, o Guia da Cultura (v1.7) e a identidade.
+Pronto, <nome>. O HayashiOS já conhece a empresa, o Guia da Cultura (v1.7) e a identidade.
 
 Pra você, de <área>, o mais útil tende a ser:
 - /decisao       uma situação do dia a dia → o que o guia orienta

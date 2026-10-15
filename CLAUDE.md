@@ -1,7 +1,7 @@
-# Hayashi OS — O sistema operacional da Hayashi
+# HayashiOS — O sistema operacional da Hayashi
 
 Este arquivo rege o Claude Code nesta pasta. Tem dois blocos: o **núcleo**
-(regras do Hayashi OS, mantidas pelo administrador e trazidas pelo
+(regras do HayashiOS, mantidas pelo administrador e trazidas pelo
 `/atualizar-sistema`) e o bloco **Hayashi** no fim (contexto da empresa e
 regras de operação desta pasta). Preferências de quem usa ficam em
 `_memoria/usuario.md`, que não vai pro repositório.

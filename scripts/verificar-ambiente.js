@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-// Confere se a máquina está pronta pra rodar o Hayashi OS e diz o que falta.
+// Confere se a máquina está pronta pra rodar o HayashiOS e diz o que falta.
 //
 // Uso:
 //   node scripts/verificar-ambiente.js
@@ -29,7 +29,7 @@ function linha(ok, texto, dica) {
   if (!ok && dica) pendencias.push(dica);
 }
 
-console.log('\nHayashi OS, verificação de ambiente\n');
+console.log('\nHayashiOS, verificação de ambiente\n');
 
 // Node
 const [maior, menor] = process.versions.node.split('.').map(Number);
@@ -115,7 +115,7 @@ if (temEnv) {
 // Estrutura e memória
 const esperados = ['CLAUDE.md', '_memoria/empresa.md', '_memoria/cultura.md', '_memoria/politicas.md', '_memoria/preferencias.md', 'identidade/design-guide.md', 'identidade/hayashi.css', 'identidade/logo.png', 'identidade/templates', '.claude/skills'];
 const faltando = esperados.filter((p) => !fs.existsSync(path.join(RAIZ, p)));
-linha(faltando.length === 0, faltando.length ? `Estrutura incompleta: falta ${faltando.join(', ')}` : 'Estrutura do Hayashi OS completa', 'Rode /atualizar-sistema ou clone de novo');
+linha(faltando.length === 0, faltando.length ? `Estrutura incompleta: falta ${faltando.join(', ')}` : 'Estrutura do HayashiOS completa', 'Rode /atualizar-sistema ou clone de novo');
 
 try {
   const cultura = fs.readFileSync(path.join(RAIZ, '_memoria/cultura.md'), 'utf8');

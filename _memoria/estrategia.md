@@ -22,7 +22,7 @@ resultados de negócio, fortalecer a Cultura Hayashi, evoluir o time
 Hayashi, contribuir para a sociedade, ser responsável com os recursos e as
 partes interessadas, atuar de forma sustentável e promover a longevidade.
 
-## Prioridades do Hayashi OS (do capítulo "Como utilizar o guia")
+## Prioridades do HayashiOS (do capítulo "Como utilizar o guia")
 
 1. Disseminar a cultura: integração de todo novo colaborador, treinamento
    contínuo, feedback referenciado no guia.

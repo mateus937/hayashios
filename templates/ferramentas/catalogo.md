@@ -2,7 +2,7 @@
 
 O que as skills usam. Tudo essencial já está em `scripts/`.
 
-## Vem no Hayashi OS (scripts/)
+## Vem no HayashiOS (scripts/)
 
 | Script | O que faz | Precisa de |
 |---|---|---|

@@ -1,4 +1,4 @@
-# scripts/ — utilitários do Hayashi OS
+# scripts/ — utilitários do HayashiOS
 
 Scripts Node.js que as skills chamam pra fazer o que o texto sozinho não
 faz: renderizar HTML em imagem e PDF, editar vídeo, transcrever, gerar QR.

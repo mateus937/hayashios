@@ -30,7 +30,7 @@ Curto: em 6 linhas a pessoa sabe onde está e o que vem pela frente.
 3. Responder UMA mensagem:
 
 ```
-Hayashi OS v<versão> · <nome>, <área> · <unidade>
+HayashiOS v<versão> · <nome>, <área> · <unidade>
 Próximos dias: <data: evento> · <data: evento>
 Calendário: <N itens pendentes esta semana | sem calendário deste mês>
 Última atividade: <data> (<skill>) · <N arquivos não salvos | tudo salvo>

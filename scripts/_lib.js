@@ -1,5 +1,5 @@
 'use strict';
-// Funções compartilhadas pelos scripts do Hayashi OS. Não precisa chamar direto.
+// Funções compartilhadas pelos scripts do HayashiOS. Não precisa chamar direto.
 
 const fs = require('fs');
 const path = require('path');

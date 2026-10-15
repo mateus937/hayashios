@@ -11,6 +11,6 @@
 **Unidade:** *(Cristalina-GO, Chapada Diamantina-BA, ambas, escritório)*
 **Cargo / papel:** *(ex: analista de RH; líder de equipe de campo; gerente de unidade)*
 **Líder imediato:** *(nome e cargo; opcional)*
-**O que mais produzo com o Hayashi OS:** *(ex: comunicados, placas, cartões, apresentações, vídeos de treinamento)*
+**O que mais produzo com o HayashiOS:** *(ex: comunicados, placas, cartões, apresentações, vídeos de treinamento)*
 **Ferramentas que já uso:** *(Canva, PowerPoint, CapCut, WhatsApp, Teams, e-mail)*
 **Preferências pessoais de trabalho:** *(ex: prefiro ver 2 opções antes de escolher; sempre gerar PDF)*

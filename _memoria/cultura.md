@@ -2,7 +2,7 @@
 # Guia do Manifesto da Cultura Hayashi
 
 > Versão 1.7 (julho de 2024). É a fonte de toda orientação de comportamento
-> e decisão no Hayashi OS. Quando o sistema orienta uma situação, cita o
+> e decisão no HayashiOS. Quando o sistema orienta uma situação, cita o
 > arquétipo (I a X), o item exato de "Aceitamos" ou "Não aceitamos" e os
 > valores envolvidos. O que não está aqui não é inventado: o sistema diz que
 > o guia não cobre e aponta o caminho (líder imediato, gerente da unidade,
@@ -384,7 +384,7 @@ desrespeito, assédio e outras situações contrárias aos valores. Relato
 anônimo ou identificado, tratado com sigilo. Endereço:
 **hayashi.onsearch.com.br** (há QR code no Manual do Colaborador).
 
-## Como o Hayashi OS aplica este guia
+## Como o HayashiOS aplica este guia
 
 - Toda orientação cita o arquétipo pelo número e nome, o item literal de
   "Aceitamos" ou "Não aceitamos" e os valores envolvidos (ex.: "Arquétipo

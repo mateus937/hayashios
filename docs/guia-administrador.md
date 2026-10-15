@@ -1,4 +1,4 @@
-# Guia do administrador do Hayashi OS
+# Guia do administrador do HayashiOS
 
 > Pra quem mantém o sistema na Hayashi: repositório, acessos, documentos
 > oficiais, identidade, versões.
@@ -19,7 +19,7 @@
 
 1. Ela instala Git, Node.js LTS e Claude Code (login com a assinatura da
    empresa ou dela, conforme a política de TI).
-2. `git clone <repo> hayashi-os`, `npm install`, `npx playwright install chromium`.
+2. `git clone https://github.com/mateus937/hayashios.git hayashios`, `npm install`, `npx playwright install chromium`.
 3. Pra vídeo: `winget install Gyan.FFmpeg` (fechar e abrir o terminal).
 4. `claude` → `/instalar` (cria o `usuario.md` dela).
 5. Entregar o `COMECE-AQUI.md` e combinar `/salvar` no fim de cada sessão.

@@ -1,4 +1,4 @@
-# Hayashi OS
+# HayashiOS
 
 > O sistema operacional da Hayashi dentro do Claude Code.
 
@@ -46,8 +46,8 @@ Manual de uso: [`COMECE-AQUI.md`](COMECE-AQUI.md).
 ## Como começar
 
 ```
-git clone <repositório privado da Hayashi> hayashi-os
-cd hayashi-os
+git clone https://github.com/mateus937/hayashios.git hayashios
+cd hayashios
 npm install
 npx playwright install chromium
 claude

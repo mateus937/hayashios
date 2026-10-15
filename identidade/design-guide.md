@@ -1,6 +1,6 @@
 # Identidade visual Hayashi
 
-> Como a marca aparece em tudo que o Hayashi OS gera. Implementada em
+> Como a marca aparece em tudo que o HayashiOS gera. Implementada em
 > `identidade/hayashi.css` e nos templates de `identidade/templates/`.
 > Fontes: logo oficial, Guia do Manifesto da Cultura (v1.7), Manual do
 > Colaborador (v4), cartão de aniversariantes. Mudanças aqui são de

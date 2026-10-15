@@ -177,7 +177,7 @@ Sujeitos a modificações conforme CLT e convenção coletiva.
 - **O não uso de EPI é falta gravíssima**: a empresa adota os procedimentos
   legais de punição, podendo encerrar o contrato por justa causa.
 
-## Como o Hayashi OS usa estas políticas
+## Como o HayashiOS usa estas políticas
 
 - Responder perguntas de colaboradores e líderes com o texto daqui e a seção
   (ex.: "5.2.2: o atestado deve ser entregue em até 48 horas").

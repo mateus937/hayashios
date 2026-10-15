@@ -1,6 +1,6 @@
 # Núcleo do CLAUDE.md (template de sistema)
 
-> Cópia do bloco núcleo do CLAUDE.md do Hayashi OS. O /atualizar restaura o
+> Cópia do bloco núcleo do CLAUDE.md do HayashiOS. O /atualizar restaura o
 > trecho entre os marcadores a partir daqui se ele sumir. Não editar à mão:
 > edite o CLAUDE.md e regenere (docs/guia-administrador.md, seção 8).
 

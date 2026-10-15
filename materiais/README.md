@@ -1,4 +1,4 @@
-# materiais/ — o que o Hayashi OS produz
+# materiais/ — o que o HayashiOS produz
 
 ```
 materiais/

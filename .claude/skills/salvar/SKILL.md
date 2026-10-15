@@ -8,7 +8,7 @@ description: >
 
 # /salvar — Guardar no repositório da Hayashi
 
-Repositório único e privado, compartilhado por quem usa o Hayashi OS.
+Repositório único e privado, compartilhado por quem usa o HayashiOS.
 `/salvar` leva o que é da empresa (materiais, comunicados, skills,
 registro) e deixa de fora o que é pessoal ou pesado (`_memoria/usuario.md`,
 `pessoas/`, `dados/`, `.env`, vídeos: tudo no `.gitignore`).

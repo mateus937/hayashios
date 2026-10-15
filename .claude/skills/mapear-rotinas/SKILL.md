@@ -2,7 +2,7 @@
 name: mapear-rotinas
 description: >
   Descobre tarefas que a área repete (RH, Segurança, Comunicação, liderança, administrativo) e
-  transforma as aprovadas em skills do Hayashi OS, compartilhadas com todos depois do /salvar.
+  transforma as aprovadas em skills do HayashiOS, compartilhadas com todos depois do /salvar.
   Parte de rotinas já mapeadas por área. Use quando o usuário disser "/mapear-rotinas", "criar
   skill", "automatizar minha rotina", "o que mais dá pra fazer com isso".
 ---

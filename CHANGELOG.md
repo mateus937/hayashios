@@ -6,7 +6,7 @@ versão traz uma seção **O que muda pra você**, mostrada pelo
 
 ## [1.0.0] — 2026-10-15
 
-Primeira versão do Hayashi OS.
+Primeira versão do HayashiOS.
 
 ### O que muda pra você
 

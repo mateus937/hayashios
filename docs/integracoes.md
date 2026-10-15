@@ -1,4 +1,4 @@
-# Integrações do Hayashi OS
+# Integrações do HayashiOS
 
 > Nenhuma é obrigatória. O dia a dia (cultura, comunicados, placas, artes,
 > apresentações, documentos, corte e formatação de vídeo) funciona só com

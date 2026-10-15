@@ -1,6 +1,6 @@
 # Casos de referência: situação → arquétipo → orientação
 
-> Exemplos de como o Hayashi OS aplica o Guia do Manifesto da Cultura (v1.7)
+> Exemplos de como o HayashiOS aplica o Guia do Manifesto da Cultura (v1.7)
 > a situações do dia a dia. O `/decisao` usa este arquivo como padrão de
 > raciocínio e de formato; não é lista fechada. Cada orientação cita o
 > arquétipo e o item literal. A decisão continua sendo da pessoa e da
