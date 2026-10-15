@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+  Template Hayashi: placa de segurança A3 paisagem (NR-26).
+  Classes no .hay-placa: seguranca (proibição, vermelho) · atencao (amarelo) · obrigatorio (azul) · emergencia (verde)
+  Ao copiar pra materiais/placas/<pasta>/, troque ../hayashi.css e ../logo.png por ../../../identidade/...
+  PDF: node scripts/pdf.js <este.html> placa.pdf --formato A3 --paisagem
+  PNG de conferência: node scripts/render.js <este.html> <pasta> --largura 1587 --altura 1123
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Placa de segurança Hayashi</title>
+<link rel="stylesheet" href="../hayashi.css">
+<style>
+  @page { size: A3 landscape; margin: 0; }
+  .hay-page.a3-paisagem { width: 1587px; height: 1123px; }
+  .hay-placa-corpo { flex-direction: row; gap: 60px; text-align: left; }
+  .hay-placa-corpo .texto { flex: 1; }
+  .hay-placa-corpo .hay-titulo { font-size: 110px; line-height: .95; }
+  .hay-placa-corpo .hay-texto { font-size: 36px; max-width: none; }
+  .pic { width: 420px; height: 420px; flex: 0 0 420px; }
+</style>
+</head>
+<body>
+
+<div class="hay-page a3-paisagem hay-placa obrigatorio">
+  <div class="hay-placa-topo">
+    <img class="hay-logo branco" src="../logo-branco.png" alt="Hayashi">
+    <span class="setor">Oficina · Unidade Cristalina</span>
+  </div>
+  <div class="hay-placa-corpo">
+    <!-- placeholder de pictograma de obrigação (círculo azul). Se a Segurança exigir, usar o ISO 7010 oficial (ex.: M014 capacete). -->
+    <svg class="pic" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="48" fill="#0057B8"/>
+      <path d="M30 56c0-11 9-20 20-20s20 9 20 20v4H30z" fill="#fff"/>
+      <rect x="24" y="60" width="52" height="8" rx="4" fill="#fff"/>
+      <rect x="47" y="30" width="6" height="10" fill="#fff"/>
+    </svg>
+    <div class="texto">
+      <p class="hay-subtitulo" style="color:#0057B8">Uso obrigatório</p>
+      <h1 class="hay-titulo">Capacete, óculos<br>e protetor auricular</h1>
+      <p class="hay-texto">Nesta área o EPI é obrigatório do início ao fim da atividade. O não uso é falta gravíssima.</p>
+      <p class="hay-texto" style="font-size:22px; color:#4A4A4D">Manual do Colaborador, 6.3 · Guia da Cultura Hayashi, arquétipo VII</p>
+    </div>
+  </div>
+  <div class="hay-placa-rodape" style="font-size:18px">
+    <span style="font-family:var(--hay-fonte-titulo); letter-spacing:.12em">CRI-SEG-012</span>
+    <span>Segurança do Trabalho · validar antes de instalar</span>
+  </div>
+</div>
+
+</body>
+</html>

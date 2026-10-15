@@ -1,0 +1,107 @@
+<!doctype html>
+<!--
+  Template Hayashi: apresentação 16:9 (1920x1080). Um .hay-page.slide por slide.
+  Ao copiar pra materiais/apresentacoes/<pasta>/, troque ../hayashi.css e ../logo.png por ../../../identidade/...
+  PNGs: node scripts/render.js <este.html> <pasta>/slides --largura 1920 --altura 1080
+  PDF:  node scripts/pdf.js <este.html> apresentacao.pdf
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Apresentação Hayashi</title>
+<link rel="stylesheet" href="../hayashi.css">
+<style>
+  @page { size: 1920px 1080px; margin: 0; }
+  .slide .hay-coluna { padding: 120px 140px; }
+  .slide .hay-titulo.m { font-size: 96px; }
+  .slide .hay-texto { font-size: 34px; }
+  .slide .hay-lista li { font-size: 34px; margin-bottom: 22px; }
+  .slide .hay-lista li::before { top: 10px; width: 24px; height: 24px; }
+  .capa .hay-titulo { font-size: 150px; line-height: .95; }
+  .arq .hay-grade-2 { gap: 80px; }
+  .arq .hay-lista li { font-size: 28px; }
+</style>
+</head>
+<body>
+
+<!-- 1. Capa -->
+<div class="hay-page slide capa hay-fundo-petroleo">
+  <div class="hay-coluna">
+    <img class="hay-logo branco" src="../logo-branco.png" alt="Hayashi" style="height:150px; margin-bottom:80px">
+    <h1 class="hay-titulo"><span class="leve">Integração</span><br>Cultural</h1>
+    <p class="hay-texto" style="opacity:.85">Guia do Manifesto da Cultura Hayashi · v1.7 · Unidade Cristalina-GO · outubro de 2026</p>
+  </div>
+</div>
+
+<!-- 2. Conteúdo -->
+<div class="hay-page slide">
+  <div class="hay-contador">02</div>
+  <div class="hay-coluna">
+    <p class="hay-subtitulo">Nossos valores</p>
+    <h2 class="hay-titulo m hay-petroleo">O que nos guia</h2>
+    <hr class="hay-regua">
+    <div class="hay-grade-2">
+      <ul class="hay-lista">
+        <li>Simplicidade</li>
+        <li>Confiança</li>
+        <li>Respeito</li>
+      </ul>
+      <ul class="hay-lista">
+        <li>Resiliência</li>
+        <li>Visão de dono</li>
+        <li>Comprometimento</li>
+      </ul>
+    </div>
+  </div>
+  <div class="hay-rodape"><span>Guia do Manifesto da Cultura Hayashi, v1.7</span><img class="hay-logo" src="../logo.png" alt=""></div>
+</div>
+
+<!-- 3. Arquétipo (Aceitamos / Não aceitamos) -->
+<div class="hay-page slide arq">
+  <div class="hay-contador">03</div>
+  <div class="hay-barra"><img class="hay-logo branco" src="../logo-branco.png" alt=""><span class="hay-barra-texto">VII. Colaboração Interna</span></div>
+  <div style="padding:72px 140px; height:calc(100% - 96px); display:flex; flex-direction:column; justify-content:center">
+    <div class="hay-grade-2">
+      <div>
+        <p class="hay-chevron">Aceitamos</p>
+        <ul class="hay-lista">
+          <li>Utilizar os instrumentos de trabalho e ambientes compartilhados com cuidado e zelo.</li>
+          <li>Apoiar as outras áreas da organização e colaborar para o alcance de melhores resultados.</li>
+          <li>Compartilhar conhecimentos e contribuir com a aprendizagem e desenvolvimento dos colegas.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="hay-chevron">Não aceitamos</p>
+        <ul class="hay-lista">
+          <li>Falta de cuidado e má utilização dos instrumentos de trabalho e ambientes compartilhados.</li>
+          <li>Ignorar as necessidades de apoio dos colegas de trabalho e outras áreas.</li>
+          <li>A não utilização dos EPIs e a ausência de cumprimento dos procedimentos de segurança.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. Citação -->
+<div class="hay-page slide hay-fundo-petroleo">
+  <div class="hay-contador">04</div>
+  <div class="hay-coluna">
+    <p class="hay-subtitulo">Nossa visão</p>
+    <blockquote class="hay-citacao" style="margin:0; font-size:72px">
+      Ser referência na produção de batata com alto nível de qualidade o ano todo.
+      <span class="autor">Guia do Manifesto da Cultura Hayashi, v1.7</span>
+    </blockquote>
+  </div>
+</div>
+
+<!-- 5. Encerramento -->
+<div class="hay-page slide hay-fundo-petroleo">
+  <div class="hay-coluna hay-centro" style="align-items:center">
+    <img class="hay-logo branco" src="../logo-branco.png" alt="Hayashi" style="height:220px; margin-bottom:60px">
+    <h2 class="hay-titulo m">Obrigado</h2>
+    <p class="hay-texto" style="opacity:.85">"Conto com o empenho e dedicação de cada um de vocês para tornar nossa visão uma realidade." — Shizuo Hayashi, Diretor Geral</p>
+  </div>
+</div>
+
+</body>
+</html>

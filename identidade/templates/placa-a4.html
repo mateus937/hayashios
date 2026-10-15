@@ -1,0 +1,44 @@
+<!doctype html>
+<!--
+  Template Hayashi: placa A4 retrato (identificação, aviso, conduta).
+  Classes no .hay-placa: (nenhuma) identificação/aviso · seguranca · atencao · obrigatorio · emergencia
+  Ao copiar pra materiais/placas/<pasta>/, troque ../hayashi.css e ../logo.png por ../../../identidade/...
+  PDF: node scripts/pdf.js <este.html> placa.pdf --formato A4
+  PNG de conferência: node scripts/render.js <este.html> <pasta> --largura 794 --altura 1123
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Placa Hayashi</title>
+<link rel="stylesheet" href="../hayashi.css">
+<style>
+  @page { size: A4; margin: 0; }
+  .hay-page.a4 { width: 794px; height: 1123px; } /* 210x297mm a 96 dpi: igual na tela e no PDF */
+  .codigo { font-family: var(--hay-fonte-titulo); letter-spacing: .12em; }
+</style>
+</head>
+<body>
+
+<div class="hay-page a4 hay-placa">
+  <div class="hay-placa-topo">
+    <img class="hay-logo branco" src="../logo-branco.png" alt="Hayashi">
+    <span class="setor">Unidade Cristalina · Portaria</span>
+  </div>
+  <div class="hay-placa-corpo">
+    <svg class="hay-pictograma" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#007581" stroke-width="6"/>
+      <circle cx="50" cy="36" r="12" fill="#007581"/>
+      <path d="M26 82c0-14 11-24 24-24s24 10 24 24" fill="#007581"/>
+    </svg>
+    <h1 class="hay-titulo">Visitantes</h1>
+    <p class="hay-texto">Acesso somente com <strong>aviso prévio e autorização do gerente da unidade</strong>. Apresente-se na portaria.</p>
+    <p class="hay-texto" style="font-size:11pt; color:#4A4A4D; margin-top:10mm">Guia da Cultura Hayashi, arquétipo IV · Comunicação</p>
+  </div>
+  <div class="hay-placa-rodape">
+    <span class="codigo">CRI-POR-001</span>
+    <span>Segurança do Trabalho · out/2026</span>
+  </div>
+</div>
+
+</body>
+</html>

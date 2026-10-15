@@ -1,0 +1,40 @@
+<!doctype html>
+<!--
+  Template Hayashi: vinheta de abertura e encerramento de vídeo (1920x1080).
+  Pra vídeo vertical, troque a classe "slide" por "story" e --largura 1080 --altura 1920.
+  Ao copiar pra materiais/videos/<pasta>/pecas/, troque ../hayashi.css e ../logo.png por ../../../../identidade/...
+  Render: node scripts/render.js <este.html> <pasta>/pecas --largura 1920 --altura 1080 --prefixo vinheta
+  Depois: node scripts/video.js vinheta <in> <out> --abertura pecas/vinheta-01.png --encerramento pecas/vinheta-02.png --duracao 3
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Vinheta Hayashi</title>
+<link rel="stylesheet" href="../hayashi.css">
+<style>
+  .vinheta { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .vinheta .hay-titulo { font-size: 120px; margin-top: 40px; }
+  .vinheta .hay-texto { font-size: 34px; opacity: .85; }
+  .faixa { position: absolute; left: 0; right: 0; bottom: 0; height: 18px; background: var(--hay-agua); }
+</style>
+</head>
+<body>
+
+<!-- Abertura -->
+<div class="hay-page slide vinheta hay-fundo-petroleo">
+  <img class="hay-logo branco" src="../logo-branco.png" alt="Hayashi" style="height:260px">
+  <h1 class="hay-titulo"><span class="leve">DDS</span> Segurança</h1>
+  <p class="hay-texto">Bloqueio e etiquetagem de máquinas · Unidade Cristalina-GO</p>
+  <div class="faixa"></div>
+</div>
+
+<!-- Encerramento -->
+<div class="hay-page slide vinheta hay-fundo-petroleo">
+  <img class="hay-logo branco" src="../logo-branco.png" alt="Hayashi" style="height:220px">
+  <p class="hay-texto" style="margin-top:48px; max-width:1200px">"Faça sua parte! Cuide de você, dos seus colegas e siga todas as normas internas."</p>
+  <p class="hay-texto" style="font-size:26px">Manual do Colaborador, 6.1 · Dúvidas: Segurança do Trabalho</p>
+  <div class="faixa"></div>
+</div>
+
+</body>
+</html>

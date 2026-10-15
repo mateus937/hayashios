@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+  Template Hayashi: lower third (nome e cargo) 1920x1080 com fundo TRANSPARENTE.
+  Pra vertical: classe "story" e 1080x1920 (ajuste left/bottom no CSS).
+  Ao copiar pra materiais/videos/<pasta>/pecas/, troque ../hayashi.css e ../logo.png por ../../../../identidade/...
+  Render: node scripts/render.js <este.html> <pasta>/pecas --largura 1920 --altura 1080 --prefixo lower --transparente
+  Depois: node scripts/video.js sobrepor <in> <out> --imagem pecas/lower-01.png --inicio 2 --fim 8
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Lower third Hayashi</title>
+<link rel="stylesheet" href="../hayashi.css">
+<style>
+  body { background: transparent; }
+  .hay-page { background: transparent; }
+  .hay-lower-third .caixa { display: flex; align-items: center; gap: 24px; }
+  .hay-lower-third img { height: 64px; }
+</style>
+</head>
+<body>
+
+<div class="hay-page slide">
+  <div class="hay-lower-third">
+    <div class="barra"></div>
+    <div class="caixa">
+      <img src="../logo.png" alt="">
+      <div>
+        <div class="nome">Maria da Silva</div>
+        <div class="cargo">Técnica de Segurança do Trabalho · Unidade Cristalina-GO</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

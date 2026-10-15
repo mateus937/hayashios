@@ -1,0 +1,92 @@
+<!doctype html>
+<!--
+  Template Hayashi: documento A4 no padrão do Manual do Colaborador (cabeçalho com número da página,
+  "HAYASHI | Título", logo; rodapé com versão). Uma .hay-page.a4 por página.
+  Ao copiar pra materiais/documentos/<pasta>/, troque ../hayashi.css e ../logo.png por ../../../identidade/...
+  PDF: node scripts/pdf.js <este.html> documento.pdf --formato A4
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Documento Hayashi</title>
+<link rel="stylesheet" href="../hayashi.css">
+<style>
+  @page { size: A4; margin: 0; }
+  .hay-page.a4 { width: 210mm; height: 297mm; display: flex; flex-direction: column; }
+  .corpo { padding: 8mm 20mm 10mm; flex: 1; }
+  .rodape-doc { padding: 6mm 20mm 10mm; font-size: 8.5pt; color: var(--hay-grafite); display: flex; justify-content: space-between; border-top: 1px solid var(--hay-cinza-claro); margin: 0 15mm; }
+  .campo { border-bottom: 1px solid var(--hay-grafite); height: 10mm; margin: 6mm 0; }
+  .campo.cinza { background: var(--hay-agua); border: 0; padding: 3mm; height: auto; }
+  .caixa-destaque { background: var(--hay-petroleo); color: #fff; padding: 6mm 8mm; border-radius: 6mm; margin: 6mm 0; }
+</style>
+</head>
+<body>
+
+<!-- Página 1 -->
+<div class="hay-page a4">
+  <div class="hay-cabecalho-doc">
+    <div><span class="hay-doc-numero">1</span><span class="hay-doc-titulo">HAYASHI | Comunicado Interno</span></div>
+    <img class="hay-logo-circulo" src="../logo.png" alt="">
+  </div>
+  <div class="corpo">
+    <h1 class="hay-h2-doc" style="font-size:22pt; margin-top:4mm">CI-2026-014 · Novo horário do transporte</h1>
+    <p class="hay-texto doc"><strong>Para:</strong> colaboradores da Unidade Cristalina-GO<br><strong>De:</strong> Recursos Humanos<br><strong>Data:</strong> 27 de outubro de 2026</p>
+
+    <h2 class="hay-h3-doc">O que muda</h2>
+    <p class="hay-texto doc">A partir de segunda-feira, 3 de novembro, o ônibus da linha 2 passa a sair às 5h40 do ponto da rodoviária. As demais linhas seguem sem alteração.</p>
+
+    <h2 class="hay-h3-doc">O que você precisa fazer</h2>
+    <ul class="hay-lista" style="font-size:11pt">
+      <li style="font-size:11pt; padding-left:8mm">Conferir o novo horário no quadro do refeitório.</li>
+      <li style="font-size:11pt; padding-left:8mm">Em caso de dúvida, falar com seu líder imediato ou com o RH.</li>
+    </ul>
+
+    <div class="caixa-destaque">
+      <p class="hay-texto doc" style="margin:0; color:#fff"><strong>Seja pontual!</strong> Pontualidade é sinal de responsabilidade. (Manual do Colaborador, 5.2)</p>
+    </div>
+
+    <table class="hay-tabela doc">
+      <thead><tr><th>Linha</th><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Praça central</td><td>5h30</td></tr>
+        <tr><td>2</td><td>Rodoviária</td><td>5h40</td></tr>
+        <tr><td>3</td><td>Bairro Novo</td><td>5h50</td></tr>
+      </tbody>
+    </table>
+
+    <p class="hay-texto doc" style="margin-top:12mm">Atenciosamente,<br><strong>Recursos Humanos · Hayashi</strong></p>
+  </div>
+  <div class="rodape-doc">
+    <span>Comunicado Interno CI-2026-014 · v1 · 27/10/2026</span>
+    <span>Recursos Humanos · Unidade Cristalina-GO</span>
+  </div>
+</div>
+
+<!-- Página 2: exemplo de formulário (Confirmação de Recebimento) -->
+<div class="hay-page a4">
+  <div class="hay-cabecalho-doc">
+    <div><span class="hay-doc-numero">2</span><span class="hay-doc-titulo">HAYASHI | Confirmação de Recebimento</span></div>
+    <img class="hay-logo-circulo" src="../logo.png" alt="">
+  </div>
+  <div class="corpo">
+    <h1 class="hay-titulo doc" style="color:var(--hay-texto); margin-top:4mm">Confirmação de recebimento</h1>
+    <hr class="hay-regua" style="margin-bottom:6mm">
+    <p class="hay-h3-doc" style="color:var(--hay-petroleo); margin-top:0">Guia da Cultura Hayashi</p>
+    <p class="hay-texto doc">Este é um comprovante de que você recebeu o Guia da Cultura Hayashi. Ao aceitar este documento, compromete-se a familiarizar-se e aderir aos princípios, ritos, símbolos e crenças que definem a cultura desta organização.</p>
+    <p class="hay-texto doc">Compreende que este manual é uma peça vital para orientar seu comportamento, decisões e interações dentro da empresa. Está ciente da importância de incorporar os valores aqui expressos em seu trabalho diário e em seu relacionamento com colegas, clientes e demais partes interessadas.</p>
+    <p class="hay-texto doc">Ao assinar este comprovante, reconhece a responsabilidade de contribuir ativamente para a preservação e fortalecimento da cultura organizacional, promovendo um ambiente de trabalho ético, colaborativo e orientado para o sucesso coletivo.</p>
+    <div style="margin-top:16mm">
+      <p class="hay-texto doc" style="margin:0">Nome legível:</p><div class="campo"></div>
+      <div class="campo cinza"><p class="hay-texto doc" style="margin:0">Assinatura do(a) colaborador(a)</p></div>
+      <p class="hay-texto doc" style="margin:0">Data:</p><div class="campo" style="width:60mm"></div>
+    </div>
+    <div class="hay-centro" style="margin-top:20mm"><img src="../logo.png" alt="Hayashi" style="height:32mm"></div>
+  </div>
+  <div class="rodape-doc">
+    <span>Guia do Manifesto da Cultura Hayashi · versão 1.7</span>
+    <span>Recursos Humanos</span>
+  </div>
+</div>
+
+</body>
+</html>

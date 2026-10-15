@@ -1,0 +1,44 @@
+# Segredos (chaves de API, tokens). NUNCA versionar.
+.env
+.env.*
+!.env.example
+
+# Contexto pessoal de quem usa (cada pessoa tem o seu)
+_memoria/usuario.md
+
+# Materiais sobre pessoas e arquivos de entrada: ficam só no computador de quem usa
+pessoas/*
+!pessoas/README.md
+dados/*
+!dados/README.md
+
+# Vídeo e áudio (pesados): só roteiro, legendas e peças vão pro repositório
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v
+*.wav
+*.mp3
+*.m4a
+*.aac
+materiais/videos/**/brutos/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Claude Code (local)
+.claude/settings.local.json
+
+# Dependências e temporários
+node_modules/
+*.log
+*.tmp
+.playwright/

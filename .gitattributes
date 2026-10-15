@@ -1,0 +1,10 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Hayashi OS: markdown e scripts sempre em LF (skills quebram com BOM/CRLF)
+*.md text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary

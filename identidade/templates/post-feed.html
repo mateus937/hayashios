@@ -1,0 +1,63 @@
+<!doctype html>
+<!--
+  Template Hayashi: post 1080x1350 (WhatsApp, mural digital, Instagram).
+  Ao copiar pra materiais/<tipo>/<pasta>/, troque:
+    ../hayashi.css  →  ../../../identidade/hayashi.css
+    ../logo.png     →  ../../../identidade/logo.png
+  Render: node scripts/render.js <este.html> <pasta> --largura 1080 --altura 1350
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Post Hayashi</title>
+<link rel="stylesheet" href="../hayashi.css">
+<style>
+  .conteudo { padding: 72px; height: calc(100% - 96px - 96px); display: flex; flex-direction: column; }
+</style>
+</head>
+<body>
+
+<!-- Variante 1: fundo branco, destaque petróleo -->
+<div class="hay-page post">
+  <div class="hay-barra">
+    <img class="hay-logo branco" src="../logo-branco.png" alt="Hayashi">
+    <span class="hay-barra-texto">Comunicação interna</span>
+  </div>
+  <div class="conteudo">
+    <p class="hay-subtitulo">Segurança do trabalho</p>
+    <h1 class="hay-titulo m hay-petroleo"><span class="leve">Faça sua</span><br>parte</h1>
+    <hr class="hay-regua">
+    <p class="hay-texto">Cuide de você, dos seus colegas e siga todas as normas internas para que todos retornem aos seus lares e famílias saudáveis e seguros.</p>
+    <ul class="hay-lista hay-mt">
+      <li>Use o EPI do começo ao fim da atividade.</li>
+      <li>Viu risco? Comunique seu líder na hora.</li>
+      <li>Dúvida sobre o procedimento? Pergunte antes.</li>
+    </ul>
+    <div class="hay-espaco"></div>
+    <p class="hay-texto p hay-grafite-t">Manual do Colaborador, 6.1 · Guia da Cultura Hayashi, arquétipo VII</p>
+  </div>
+  <div class="hay-rodape">
+    <span>Unidade Cristalina-GO · Segurança do Trabalho</span>
+    <img class="hay-logo" src="../logo.png" alt="">
+  </div>
+</div>
+
+<!-- Variante 2: fundo petróleo, citação -->
+<div class="hay-page post hay-fundo-petroleo">
+  <div class="hay-contador">02 / 02</div>
+  <div class="hay-coluna">
+    <img class="hay-logo branco" src="../logo-branco.png" alt="Hayashi" style="height:120px; margin-bottom:56px">
+    <p class="hay-subtitulo">Nosso propósito</p>
+    <blockquote class="hay-citacao" style="margin:0">
+      Estabelecer relações de confiança que promovam o crescimento dos nossos parceiros e colaboradores, por meio de um processo produtivo sustentável, inovador e responsável.
+      <span class="autor">Guia do Manifesto da Cultura Hayashi, v1.7</span>
+    </blockquote>
+  </div>
+  <div class="hay-rodape">
+    <span>hayashi.agr.br</span>
+    <span>Cristalina-GO · Chapada Diamantina-BA</span>
+  </div>
+</div>
+
+</body>
+</html>

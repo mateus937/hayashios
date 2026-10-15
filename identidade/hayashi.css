@@ -1,0 +1,233 @@
+/* ============================================================
+   Hayashi OS — folha de estilo da identidade visual
+   Usada por todas as peças HTML (posts, placas, slides, cartões,
+   documentos, vinhetas). Fonte da verdade das cores e fontes:
+   identidade/design-guide.md. Não alterar valores aqui sem
+   atualizar o design-guide.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500;700&family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+  /* Cores oficiais */
+  --hay-petroleo: #007581;        /* cor principal: logo, fundos, títulos */
+  --hay-petroleo-escuro: #005A64; /* hover, sombras de cor, contraste */
+  --hay-petroleo-claro: #2A9AA5;  /* detalhes, gráficos */
+  --hay-agua: #D7E8EA;            /* tinta clara: ilustrações de linha, fundos suaves */
+  --hay-nevoa: #EEF4F5;           /* fundo alternativo quase branco */
+  --hay-cinza-claro: #E6E9EA;     /* cards claros, linhas de tabela */
+  --hay-branco: #FFFFFF;
+  --hay-grafite: #4A4A4D;         /* cinza da palavra HAYASHI, textos de apoio */
+  --hay-texto: #2B2B2B;           /* texto corrido */
+  --hay-verde: #5DB75D;           /* apoio em ícones de linha (manual) */
+  /* Sinalização de segurança (NR-26); usar só em placas de segurança */
+  --hay-vermelho: #C8102E;
+  --hay-amarelo: #F2B705;
+  --hay-azul: #0057B8;
+  --hay-verde-seguranca: #009639;
+
+  /* Tipografia */
+  --hay-fonte-titulo: 'Roboto Condensed', 'Roboto', Arial, sans-serif;
+  --hay-fonte-texto: 'Lato', 'Roboto', Arial, sans-serif;
+
+  /* Geometria */
+  --hay-raio: 40px;       /* cantos dos cards grandes */
+  --hay-raio-pequeno: 16px;
+  --hay-margem: 72px;     /* margem interna padrão em peças 1080px */
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--hay-fonte-texto);
+  color: var(--hay-texto);
+  background: #777; /* fundo neutro de pré-visualização; cada .hay-page tem o próprio */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Páginas / formatos ---------- */
+.hay-page {
+  position: relative;
+  overflow: hidden;
+  background: var(--hay-branco);
+  margin: 0 auto;
+}
+.hay-page.post      { width: 1080px; height: 1350px; }  /* Instagram feed 4:5 */
+.hay-page.quadrado  { width: 1080px; height: 1080px; }  /* WhatsApp, mural digital */
+.hay-page.story     { width: 1080px; height: 1920px; }  /* story / reels / TV vertical */
+.hay-page.slide     { width: 1920px; height: 1080px; }  /* apresentação, vinheta, TV */
+.hay-page.capa-video{ width: 1920px; height: 1080px; }
+.hay-page.a4        { width: 210mm; height: 297mm; }
+.hay-page.a4-paisagem { width: 297mm; height: 210mm; }
+.hay-page.a3        { width: 297mm; height: 420mm; }
+.hay-page.a3-paisagem { width: 420mm; height: 297mm; }
+.hay-page.cracha    { width: 54mm; height: 86mm; }      /* CR-80 vertical */
+.hay-page.cartao    { width: 1400px; height: 840px; }   /* cartão digital 5:3 */
+
+@media print {
+  body { background: none; }
+  .hay-page { margin: 0; page-break-after: always; }
+}
+
+/* Fundos */
+.hay-fundo-petroleo { background: var(--hay-petroleo); color: var(--hay-branco); }
+.hay-fundo-nevoa    { background: var(--hay-nevoa); }
+.hay-fundo-agua     { background: var(--hay-agua); }
+.hay-fundo-foto {
+  background-size: cover; background-position: center;
+}
+.hay-fundo-foto::before { /* overlay petróleo sobre foto */
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,117,129,.55), rgba(0,90,100,.85));
+}
+.hay-fundo-foto > * { position: relative; }
+
+/* ---------- Barras e cabeçalhos ---------- */
+.hay-barra {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 96px; padding: 0 var(--hay-margem);
+  background: var(--hay-petroleo); color: var(--hay-branco);
+}
+.hay-barra .hay-logo { height: 56px; }
+.hay-barra .hay-barra-texto {
+  font-family: var(--hay-fonte-titulo); font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; font-size: 18px;
+}
+
+/* Cabeçalho de documento (padrão do Manual do Colaborador) */
+.hay-cabecalho-doc {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10mm 15mm 0 15mm; font-family: var(--hay-fonte-titulo);
+}
+.hay-cabecalho-doc .hay-doc-numero {
+  background: var(--hay-petroleo); color: #fff; font-weight: 700;
+  padding: 2px 10px; margin-right: 10px; font-size: 11pt;
+}
+.hay-cabecalho-doc .hay-doc-titulo { color: var(--hay-petroleo); font-weight: 700; font-size: 11pt; }
+.hay-cabecalho-doc .hay-logo-circulo { height: 14mm; }
+
+/* ---------- Logo ---------- */
+.hay-logo { display: block; }
+.hay-logo.branco { } /* use src=identidade/logo-branco.png (anel, folhas e palavra em branco). Sem o arquivo, a classe .branco-filtro vira o PNG colorido em silhueta branca */
+.hay-logo.branco-filtro { filter: brightness(0) invert(1); }
+.hay-logo.marca-dagua { opacity: .18; }
+
+/* ---------- Tipografia ---------- */
+.hay-titulo {
+  font-family: var(--hay-fonte-titulo); font-weight: 700;
+  text-transform: uppercase; letter-spacing: .01em; line-height: .98;
+  margin: 0 0 24px;
+}
+.hay-titulo .leve { font-weight: 300; }        /* "GUIA DO MANIFESTO DA" leve + "CULTURA" bold */
+.hay-titulo.g  { font-size: 120px; }
+.hay-titulo.m  { font-size: 84px; }
+.hay-titulo.p  { font-size: 56px; }
+.hay-titulo.doc{ font-size: 28pt; }
+.hay-subtitulo {
+  font-family: var(--hay-fonte-titulo); font-weight: 400;
+  text-transform: uppercase; letter-spacing: .18em; font-size: 20px;
+  color: var(--hay-petroleo); margin: 0 0 16px;
+}
+.hay-fundo-petroleo .hay-subtitulo { color: rgba(255,255,255,.85); }
+.hay-texto { font-size: 26px; line-height: 1.5; font-weight: 400; margin: 0 0 16px; }
+.hay-texto.p { font-size: 20px; }
+.hay-texto.doc { font-size: 11pt; line-height: 1.6; color: var(--hay-texto); }
+.hay-destaque { font-weight: 700; color: var(--hay-petroleo); }
+.hay-fundo-petroleo .hay-destaque { color: #fff; }
+.hay-h2-doc { font-family: var(--hay-fonte-titulo); color: var(--hay-petroleo); font-size: 18pt; font-weight: 700; margin: 10mm 0 4mm; }
+.hay-h3-doc { font-family: var(--hay-fonte-texto); color: var(--hay-texto); font-size: 13pt; font-weight: 700; margin: 6mm 0 2mm; }
+
+/* Régua sob títulos (como em "SUMÁRIO", "PROPÓSITO") */
+.hay-regua { width: 96px; height: 5px; background: var(--hay-petroleo); border: 0; margin: 0 0 32px; }
+.hay-fundo-petroleo .hay-regua { background: #fff; }
+
+/* ---------- Cards ---------- */
+.hay-card {
+  background: var(--hay-petroleo); color: #fff;
+  border-radius: var(--hay-raio); padding: 56px 64px;
+}
+.hay-card.claro { background: var(--hay-cinza-claro); color: var(--hay-texto); }
+.hay-card.nevoa { background: var(--hay-nevoa); color: var(--hay-texto); }
+.hay-card.branco { background: #fff; color: var(--hay-texto); border: 2px solid var(--hay-petroleo); }
+.hay-card.assimetrico { border-radius: var(--hay-raio) var(--hay-raio) var(--hay-raio) 0; }
+.hay-card.assimetrico-inverso { border-radius: 0 var(--hay-raio) var(--hay-raio) var(--hay-raio); }
+.hay-card .hay-titulo { color: inherit; }
+
+/* Citação com aspas grandes (Propósito, Visão, falas da liderança) */
+.hay-citacao { position: relative; padding-left: 72px; font-family: var(--hay-fonte-titulo); font-weight: 700; font-size: 44px; line-height: 1.2; }
+.hay-citacao::before {
+  content: '\201C'; position: absolute; left: 0; top: -22px;
+  font-size: 140px; line-height: 1; opacity: .9; font-family: Georgia, serif;
+}
+.hay-citacao .autor { display: block; margin-top: 20px; font-family: var(--hay-fonte-texto); font-weight: 400; font-size: 22px; opacity: .85; }
+
+/* ---------- Listas ---------- */
+.hay-lista { list-style: none; padding: 0; margin: 0 0 24px; }
+.hay-lista li { position: relative; padding-left: 44px; margin: 0 0 14px; font-size: 24px; line-height: 1.4; }
+.hay-lista li::before {
+  content: ''; position: absolute; left: 0; top: 6px; width: 22px; height: 22px;
+  border-radius: 50%; background: var(--hay-petroleo);
+}
+.hay-fundo-petroleo .hay-lista li::before { background: #fff; }
+
+/* "ACEITAMOS / NÃO ACEITAMOS": círculo com chevron */
+.hay-chevron { display: inline-flex; align-items: center; gap: 16px; font-family: var(--hay-fonte-titulo); font-weight: 700; font-size: 28px; text-transform: uppercase; color: var(--hay-petroleo); margin: 0 0 16px; }
+.hay-chevron::before {
+  content: '\203A'; display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 50%; border: 3px solid currentColor;
+  font-size: 34px; line-height: 1; padding-bottom: 4px;
+}
+
+/* Linhas de tabela alternadas (sumário do guia) */
+.hay-tabela { width: 100%; border-collapse: collapse; font-size: 22px; }
+.hay-tabela th { text-align: left; font-family: var(--hay-fonte-titulo); text-transform: uppercase; letter-spacing: .08em; color: var(--hay-petroleo); padding: 12px 16px; border-bottom: 3px solid var(--hay-petroleo); }
+.hay-tabela td { padding: 12px 16px; }
+.hay-tabela tr:nth-child(even) td { background: var(--hay-cinza-claro); }
+.hay-tabela.doc { font-size: 10.5pt; }
+
+/* ---------- Tags, botões, rodapé ---------- */
+.hay-tag { display: inline-block; font-family: var(--hay-fonte-titulo); font-weight: 700; text-transform: uppercase; letter-spacing: .2em; font-size: 16px; padding: 8px 18px; border: 2px solid currentColor; border-radius: 999px; }
+.hay-botao { display: inline-block; background: var(--hay-petroleo); color: #fff; font-family: var(--hay-fonte-titulo); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; padding: 18px 36px; border-radius: 999px; text-decoration: none; }
+.hay-rodape { position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: space-between; padding: 28px var(--hay-margem); font-size: 18px; color: var(--hay-grafite); border-top: 1px solid rgba(0,0,0,.08); }
+.hay-fundo-petroleo .hay-rodape { color: rgba(255,255,255,.8); border-top-color: rgba(255,255,255,.18); }
+.hay-rodape .hay-logo { height: 40px; }
+.hay-contador { position: absolute; top: 36px; right: var(--hay-margem); font-family: var(--hay-fonte-titulo); letter-spacing: .18em; font-size: 16px; color: var(--hay-grafite); }
+.hay-fundo-petroleo .hay-contador { color: rgba(255,255,255,.7); }
+
+/* ---------- Placas ---------- */
+.hay-placa { display: flex; flex-direction: column; }
+.hay-placa .hay-placa-topo { background: var(--hay-petroleo); color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 8mm 12mm; }
+.hay-placa .hay-placa-topo .hay-logo { height: 18mm; }
+.hay-placa .hay-placa-topo .setor { font-family: var(--hay-fonte-titulo); text-transform: uppercase; letter-spacing: .16em; font-size: 14pt; }
+.hay-placa .hay-placa-corpo { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 12mm; }
+.hay-placa .hay-placa-corpo .hay-titulo { font-size: 48pt; color: var(--hay-petroleo); }
+.hay-placa .hay-placa-corpo .hay-texto { font-size: 18pt; max-width: 80%; }
+.hay-placa .hay-placa-rodape { padding: 6mm 12mm; font-size: 9pt; color: var(--hay-grafite); display: flex; justify-content: space-between; border-top: 1px solid var(--hay-cinza-claro); }
+/* faixa de segurança (NR-26): usar com .hay-placa */
+.hay-placa.seguranca .hay-placa-corpo .hay-titulo { color: var(--hay-vermelho); }
+.hay-placa.atencao .hay-placa-corpo .hay-titulo { color: #8A6A00; }
+.hay-placa.atencao .hay-placa-topo { background: var(--hay-amarelo); color: var(--hay-texto); }
+.hay-placa.atencao .hay-placa-topo .hay-logo.branco { filter: none; }
+.hay-placa.obrigatorio .hay-placa-corpo .hay-titulo { color: var(--hay-azul); }
+.hay-placa.emergencia .hay-placa-corpo .hay-titulo { color: var(--hay-verde-seguranca); }
+.hay-pictograma { width: 60mm; height: 60mm; margin: 0 auto 8mm; }
+
+/* ---------- Vídeo: vinheta e lower third ---------- */
+.hay-lower-third { position: absolute; left: 96px; bottom: 240px; display: flex; align-items: stretch; }
+.hay-lower-third .barra { width: 14px; background: var(--hay-petroleo); border-radius: 7px 0 0 7px; }
+.hay-lower-third .caixa { background: rgba(255,255,255,.96); padding: 22px 40px 22px 32px; border-radius: 0 18px 18px 0; }
+.hay-lower-third .nome { font-family: var(--hay-fonte-titulo); font-weight: 700; font-size: 44px; color: var(--hay-petroleo); text-transform: uppercase; letter-spacing: .02em; line-height: 1; }
+.hay-lower-third .cargo { font-size: 24px; color: var(--hay-grafite); margin-top: 6px; }
+.hay-legenda-faixa { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 96px; background: rgba(0,117,129,.92); color: #fff; font-size: 34px; text-align: center; }
+
+/* ---------- Utilidades ---------- */
+.hay-centro { text-align: center; }
+.hay-coluna { display: flex; flex-direction: column; justify-content: center; height: 100%; padding: var(--hay-margem); }
+.hay-grade-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.hay-espaco { flex: 1; }
+.hay-mt { margin-top: 32px; }
+.hay-mb { margin-bottom: 32px; }
+.hay-branco { color: #fff; }
+.hay-petroleo { color: var(--hay-petroleo); }
+.hay-grafite-t { color: var(--hay-grafite); }
+.hay-img-arredondada { border-radius: var(--hay-raio-pequeno); object-fit: cover; width: 100%; }
