@@ -42,6 +42,11 @@ abrir, salvar, atualizar, atualizar-sistema, novo-projeto, mapear-rotinas
   branco, miolo vazado)
 - `identidade/elementos/`: folha de canto, ramo de bambu e serpentina
   oficiais, em petróleo e branco, com fundo e nervuras transparentes
+- `identidade/logo-horizontal.png` (transparente), `logo-horizontal-fundo-branco.png`
+  e o original `logo-horizontal.pdf`
+- Cabeçalho oficial com paisagem em traço: `identidade/cabecalho-paisagem.pdf`
+  e os PNGs `identidade/elementos/cabecalho-paisagem-centro.png` e
+  `cabecalho-paisagem-esquerda.png`
 - `identidade/hayashi.css` e 11 templates: post, story, placa A4, placa A3
   paisagem, slide 16:9, cartão (aniversário oficial), documento A4 (padrão
   do manual), certificado, vinheta de vídeo, lower third, reforço no time

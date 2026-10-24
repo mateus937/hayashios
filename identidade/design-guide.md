@@ -20,6 +20,15 @@
   em branco, miolo vazado, como no verso do cartão oficial; gerada a partir do
   PNG colorido, substituir pela oficial quando a Comunicação enviar). A
   adicionar: `logo.svg` vetorial e `logo-simbolo.svg` (só o brasão).
+- **Logo horizontal (oficial, Canva, out/2026):** brasão à esquerda e
+  HAYASHI em grafite à direita, numa linha só.
+  `identidade/logo-horizontal.png` (2200x832, fundo transparente, extraído do
+  PDF), `identidade/logo-horizontal-fundo-branco.png` (1920x1080, fundo
+  branco, como foi enviado) e o original `identidade/logo-horizontal.pdf`
+  (1440x810 pt). Usar quando o espaço é largo e baixo (barra superior,
+  rodapé, assinatura de e-mail, cabeçalho de documento). Não é vetorial: o
+  PDF contém imagem raster (1320x612 px), então não ampliar além disso.
+  `identidade/logo.png` continua sendo o logo padrão dos templates e scripts.
 - **Regras:** nunca distorcer, recortar, girar, aplicar sombra ou contorno,
   nem mudar as cores (só petróleo, branco ou grafite). Área de respiro:
   metade da altura do símbolo em volta. Tamanho mínimo: 24 mm impresso /
@@ -108,6 +117,16 @@ simplicidade; não parece agência nem rede social.
 | `folha-canto.png` / `folha-canto-branco.png` | trio de folhas com as bordas já cortadas | sempre encostado num **canto** da peça (as bordas retas ficam na borda do papel); não girar |
 | `folha-ramo.png` / `folha-ramo-branco.png` | ramo de bambu completo (3 folhas + haste) | pode girar e sangrar pela borda; 1 ou 2 por peça, no máximo |
 | `serpentina.png` / `serpentina-branco.png` | traço em espiral | só em peças de celebração (aniversário, conquista, confraternização) |
+| `cabecalho-paisagem-centro.png` | faixa com paisagem em traço (ramo, pedras, colinas) e o brasão + HAYASHI **centralizado** | topo de documentos e peças largas; só petróleo e grafite, fundo transparente |
+| `cabecalho-paisagem-esquerda.png` | mesma faixa com o brasão + HAYASHI **à esquerda** | topo de documentos e peças largas, alinhado à esquerda |
+
+Os dois cabeçalhos vêm do arquivo oficial "Cabeçalho Hayashi" (Canva,
+out/2026), guardado em `identidade/cabecalho-paisagem.pdf` (6x4 pol., as
+duas versões na mesma página). Os PNGs foram renderizados do PDF a 300 dpi
+com fundo transparente (cerca de 1210x186 px); as imagens dentro do PDF
+são raster CMYK, então não ampliar muito. O petróleo dessa arte sai um pouco
+mais escuro (~`#286E77` medido no PNG) que o do logo (`#007581`); é
+conversão do CMYK, não uma cor nova da marca.
 
 Petróleo sobre fundo claro; branco sobre petróleo ou foto com overlay.
 Nunca esticar (manter proporção), nunca recolorir fora de petróleo/branco,
@@ -153,6 +172,7 @@ certificado A4 paisagem · vinheta e lower third 1920x1080 · reforço no time (
 ## Logo
 
 - **Arquivo:** identidade/logo.png
+- **Versão horizontal:** identidade/logo-horizontal.png (transparente)
 - **Versão pra fundo escuro:** identidade/logo-branco.png *(a adicionar; até lá, classe `.branco`)*
 - **Onde usar:** barra superior das peças, rodapé, capa e encerramento de
   slides e vídeos, cabeçalho de documentos, topo das placas
