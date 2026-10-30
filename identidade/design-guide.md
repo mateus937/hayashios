@@ -18,8 +18,11 @@
 - **Arquivos:** `identidade/logo.png` (512x512, colorido, fundo transparente) e
   `identidade/logo-branco.png` (versão pra fundo escuro: anel, folhas e palavra
   em branco, miolo vazado, como no verso do cartão oficial; gerada a partir do
-  PNG colorido, substituir pela oficial quando a Comunicação enviar). A
-  adicionar: `logo.svg` vetorial e `logo-simbolo.svg` (só o brasão).
+  PNG colorido, substituir pela oficial quando a Comunicação enviar).
+  `identidade/brasao-branco.svg` (vetor, out/2026): versão branca limpa, sem
+  serrilhado, pra fundo escuro em apresentações e peças grandes. **Prefira esta
+  ao logo-branco.png** sempre que o brasão aparecer grande. A adicionar:
+  `logo.svg` vetorial colorido.
 - **Logo horizontal (oficial, Canva, out/2026):** brasão à esquerda e
   HAYASHI em grafite à direita, numa linha só.
   `identidade/logo-horizontal.png` (2200x832, fundo transparente, extraído do
@@ -173,7 +176,7 @@ certificado A4 paisagem · vinheta e lower third 1920x1080 · reforço no time (
 
 - **Arquivo:** identidade/logo.png
 - **Versão horizontal:** identidade/logo-horizontal.png (transparente)
-- **Versão pra fundo escuro:** identidade/logo-branco.png *(a adicionar; até lá, classe `.branco`)*
+- **Versão pra fundo escuro:** identidade/brasao-branco.svg (vetor, preferencial) ou identidade/logo-branco.png
 - **Onde usar:** barra superior das peças, rodapé, capa e encerramento de
   slides e vídeos, cabeçalho de documentos, topo das placas
 - **Tamanho sugerido:** 56 px na barra; 120-260 px em capas; 14 mm em documentos; 18 mm no topo de placas
